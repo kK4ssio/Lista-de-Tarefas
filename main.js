@@ -10,7 +10,7 @@ function addTarefas() { //adiciona uma nova tarefa a lista
         const DeleteBtn = document.createElement("span"); //cria o botao de apagar
 
         DeleteBtn.textContent = " X"; //define o texto do botao
-        DeleteBtn.style.color = "blue";
+        DeleteBtn.style.color = "rgb(85, 173, 155)";
         DeleteBtn.style.boxShadow = "black";
         DeleteBtn.style.cursor = "pointer";
         DeleteBtn.style.fontSize = "30px";

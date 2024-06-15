@@ -3,6 +3,7 @@ body {
     padding: 0;
     display: grid;
     background-color: rgb(85, 173, 155); 
+    font-family: "Nunito", sans-serif;
 }
 
 header {
@@ -13,13 +14,15 @@ header {
 }
 
 .conteudo {
-    margin: 180px;
-    padding: 10px;
+    margin: 10px; 
+    width: 50%;
     background-color: rgb(216, 239, 211);
     text-align: center;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;  
+    border-radius: 20px; 
+    position: relative;
+    left: 25%; 
 }
 
 .a{
@@ -37,4 +40,11 @@ input{
     border-radius: 5px;
     border: none;
     height: 30px;
+}
+.titulo1{
+    color: rgb(85, 173, 155);
+}
+ul {
+    display: inline-block;
+    margin-right: 30%;
 }
