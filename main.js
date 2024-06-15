@@ -12,6 +12,7 @@ function addTarefas() { //adiciona uma nova tarefa a lista
         DeleteBtn.textContent = " X"; //define o texto do botao
         DeleteBtn.style.color = "rgb(85, 173, 155)";
         DeleteBtn.style.boxShadow = "black";
+        DeleteBtn.style.fontFamily = "Permanent Marker";
         DeleteBtn.style.cursor = "pointer";
         DeleteBtn.style.fontSize = "30px";
         DeleteBtn.className = "delete"; //define a classe CSS para o botao
@@ -20,13 +21,21 @@ function addTarefas() { //adiciona uma nova tarefa a lista
 
             TaskList.removeChild(ListItem); //remove o item da lista 
         }
+
         ListItem.appendChild(DeleteBtn); // Adicione esta linha para adicionar o botão de exclusão ao item da lista
         TaskList.appendChild(ListItem); // Adicione esta linha para adicionar o item à lista de tarefas
         TaskInput.value = "";  //limpa o input de tarefa
     }
+
     TaskInput.addEventListener("keypress", function (e) {
         if (e.key === "Enter") { // Mude de "enter" para "Enter"
             addTarefas(); // Corrija a chamada da função para addTarefas()
         }
+        
     });
+
+}
+
+function apagatudo() { //funçao que serve para limpar e começar a lista do zero.
+    location.reload(); //metodo que quando é chamado, reinicia a página.
 }

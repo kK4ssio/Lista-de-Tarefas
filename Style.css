@@ -7,10 +7,17 @@ body {
 }
 
 header {
-    background-color: rgb(149, 210, 179);
+    opacity: 80%;
+    background-color: rgb(149, 210, 179) ;
     color: rgb(241, 248, 232);
     text-align: center;
     padding: 30px;
+    border: 2px solid  rgb(124, 202, 163)  ; 
+}
+
+h1 {
+    color: rgb(241, 248, 232);
+    text-align: center;
 }
 
 .conteudo {
@@ -22,28 +29,47 @@ header {
     flex-direction: column;
     border-radius: 20px; 
     position: relative;
-    left: 25%; 
+    left: 25%;
+    border: 1.7px solid rgb(55, 128, 113) ;
+    box-shadow: 1.5px 1.5px 1.5px rgb(42, 94, 83); 
 }
 
 .a{
     opacity: 0%;
 }
+
 .btn{
+    
     cursor: pointer;
     background-color:  rgb(85, 173, 155);
     border-radius: 5px;
     border: none;
     color: aliceblue;
     height: 30px;
+    transition: background-color 0.3s, transform 0.3s;
 }
+
+.btn:hover {
+    background-color: rgb(65, 153, 135);
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
 input{
     border-radius: 5px;
     border: none;
     height: 30px;
+    margin: auto;
+    padding: auto;
 }
+
 .titulo1{
     color: rgb(85, 173, 155);
 }
+
 ul {
     display: inline-block;
     margin-right: 30%;
